@@ -32,12 +32,15 @@ let drop = document.querySelectorAll('.drop-down a');
 let panah = document.querySelector('.fa-angle-down');
 let dropMoblie = document.querySelector('.home');
 const dropMo = document.querySelector('.drop-down');
+const mediaQuery =  window.matchMedia('(max-width: 430px)');
 dropMoblie.addEventListener('click',(e)=>{
-	panah.style.transform = 'rotate(180deg)';
-	dropMo.classList.toggle('drop-mobile');
-	dropMo.classList.toggle('none');
-	if (!dropMo.classList.contains('drop-mobile')) {
-		panah.style.transform = 'rotate(0deg)';
+	if (mediaQuery.matches) {
+		panah.style.transform = 'rotate(180deg)';
+		dropMo.classList.toggle('drop-mobile');
+		dropMo.classList.toggle('none');
+		if (!dropMo.classList.contains('drop-mobile')) {
+			panah.style.transform = 'rotate(0deg)';
+		}
 	}
 })
 	// ======Bagian UpScrool======
