@@ -41,6 +41,8 @@ dropMoblie.addEventListener('click',(e)=>{
 		if (!dropMo.classList.contains('drop-mobile')) {
 			panah.style.transform = 'rotate(0deg)';
 		}
+	}else{
+		console.log('gagal');
 	}
 })
 	// ======Bagian UpScrool======
