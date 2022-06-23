@@ -1,0 +1,212 @@
+/*Ukuran Tablet*/
+@media screen and (max-width: 890px){
+	.wrap-Nav{
+		width: 90%;
+		justify-content: space-around;
+	}
+	section{
+		margin-top: -0.7em;
+	}
+	.logo{
+		font-size: 2.2vmax;
+	}
+	.logo span{
+		font-size: 3vmax;
+	}
+	.navigation ul li a{
+		font-size: 1.1vmax;
+	}
+	.navigation ul .nav a::after{
+		bottom: 25%;
+	}
+	.simulasi::after{
+		bottom: 25%;
+	}
+	/*Bagian form*/
+	.wrap {
+		width: 90%;
+	}
+	.imgLogo img{
+		width: 100%;
+	}
+	.fluid{
+		width: 32vmax;
+	}
+	.login {
+		width: 100%;
+		height: 38%;
+	}
+	.login h1 {
+		font-size: 2.5vmax;
+	}
+	.login ul p{
+		font-size: 1.5vmax;
+	}
+	.login ul li {
+		font-size: 1.5vmax;
+	}
+	.cont-form label{
+		font-size: 1.5vmax;
+		top: -1.7vmax;
+	}
+	#form input[type='text']{
+		font-size: 1.5vmax;
+	}
+	#form input:focus~label,
+	#form input:valid~label{
+		top: -4vmax;
+		font-size: 1.3vmax;
+	}
+	#form span{
+		opacity: 0;
+		top: -4vmax;
+		font-size: 1.3vmax;
+	}
+	#form i:nth-child(4){
+		opacity: 0;
+		font-size: 1.3vmax;
+		left: 15.5vmax;
+		top: -2vmax;
+	}
+	#form i:nth-child(5){
+		opacity: 0;
+		top: -2vmax;
+		font-size: 1.3vmax;
+		left: 13.5vmax;
+	}
+	#form button{
+		font-size: 1.5vmax;
+	}
+}
+/*Ukuran Mobile*/
+@media screen and (max-width: 430px){
+	section{
+		margin-top: -7%;
+		height: 100%;
+	}
+	.logo{
+		font-size: 3vmax;
+	}
+	.logo span{
+		font-size: 4vmax;
+	}
+	.wrap-Nav{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.navigation{
+		opacity: 0;
+		background-color: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 0%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s ease-out;
+	}
+	.navigation ul{
+		background-color: white;
+		width: 80%;
+		height: 88.5%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 1em;
+	}
+	.navigation ul li{
+		margin-left: 0;
+	}
+	.navigation ul li a{
+		font-size: 2.5vmax;
+		width: 100%;
+	}
+	.simulasi::after{
+		display: none;
+	}
+	.navigation ul .nav a::after{
+		display: none;
+	}
+	.menu {
+		display: flex;
+		z-index: 9999;
+		position: fixed;
+	}
+	.geser {
+		opacity: 1;
+		height: 100%;
+	}
+	.wrap {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.imgLogo{
+		width: 80%;
+	}
+	.imgLogo img {
+		width: 100%;
+	}
+	.fluid{
+		width: 35vmax;
+		height: 45vmax;
+	}
+	.login {
+		width: 100%;
+		height: 100%;
+	}
+	.login h1 {
+		font-size: 3vmax;
+	}
+	.login ul p{
+		font-size: 1.6vmax;
+	}
+	.login ul li {
+		font-size: 1.9vmax;
+	}
+	#form {
+		margin-top: 12%;
+		height: 12vmax;
+	}
+	.cont-form {
+		height: 100%;
+	}
+	.cont-form label{
+		font-size: 2vmax;
+		top: -20px;
+	}
+	#form input[type='text']{
+		font-size: 2.2vmax;
+	}
+	#form input:focus~label,
+	#form input:valid~label{
+		top: -90%;
+		font-size: 1.7vmax;
+	}
+	#form span{
+		opacity: 0;
+		font-size: 1.7vmax;
+		left: 55%;
+		top: -90%;
+	}
+	#form i:nth-child(4){
+		opacity: 0;
+		left: 8.4em;
+		font-size: 1.7vmax;
+		top: -19px;
+	}
+	#form i:nth-child(5){
+		opacity: 0;
+		left: 7em;
+		font-size: 1.7vmax;
+		top: -19px;
+	}
+	#form button{
+		width: 12vmax;
+		height: 8vmax;
+		font-size: 2vmax;
+	}
+
+}

@@ -1,0 +1,150 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+:root {
+	--color: rgba(66,135,245,0.8);
+}
+body {
+	overflow: hidden;
+	background-color: var(--color);
+}
+	/*=======Bagian Header=======*/
+#header {
+	background-color: white;
+	display: flex;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 5vmax;
+	transition: 0.6s;
+	box-shadow: 0vmax -0.3vmax 1.5vmax #000000;
+}
+section {
+	margin-top: -1em;
+}
+.wrap-Nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	height: 5vmax;
+	margin: auto;
+}
+.logo{
+	text-decoration: none;
+	font-size: 2vmax;
+	transition: 0.6s;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	color: #6495ED;
+}
+
+.logo span{
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+	font-size: 3vmax;
+	color: #FF7F50;
+}
+.navigation ul li {
+	display: inline-block;
+	position: relative;
+	justify-content: space-around;
+	margin-left: 20px;
+	padding: 20px;
+}
+.navigation ul .nav a::after {
+	border-radius: 25%;
+	content: '';
+	width: 0%;
+	height: 2%;
+	position: absolute;
+	bottom: 10px;
+	left: 20%;
+	background-color: #6495ED;
+	opacity: 1;
+	cursor: default;
+	transition: all 0.5s ease;
+}
+.navigation ul .nav a:visited {
+	color: grey;
+	transition: all 0.5s ease;
+}
+.navigation .perhitungan a {
+	font-weight: bold;
+	color: #6495ED;
+}
+.perhitungan::after {
+	border-radius: 25%;
+	content: '';
+	width: 80%;
+	height: 2%;
+	position: absolute;
+	bottom: 10px;
+	left: 20%;
+	background-color: #6495ED;
+	cursor: default;
+	transition: all 0.5s ease;	
+}
+.navigation ul .nav a:hover {
+	color: #6495ED;
+}
+.navigation ul .nav a:hover::after{
+	/*opacity: 1;*/
+	opacity: 1;
+	width: 80%;
+}
+.navigation ul li a{
+	text-decoration: none;
+	font-size: 1.2vmax;
+	color: grey;
+	cursor: pointer;
+}
+	/*======Bagian Hamburger Menu ======*/
+.menu {
+	display: none;
+	flex-direction: column;
+	width: 6%;
+	height: 3%;
+	position: absolute;
+	top: 1%;
+	right: 20px;
+	justify-content: space-around;
+	z-index: 3;
+	cursor: pointer;
+}
+.menu span{
+	display: block;
+	width: 100%;
+	height: 12%;
+	border-radius: 4px;
+	background-color: black;
+	transition: .8s;
+}
+.toggle span:nth-child(1){
+	transform: rotate(45deg) translate(32%, 100%);
+}
+.toggle span:nth-child(2){
+	transform: scale(0);
+}
+.toggle span:nth-child(3){
+	transform: rotate(-45deg) translate(32%, -100%);
+}
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	width: 85%;
+	height: 100vh;
+}
+.con-chart{
+	margin-top: 7%;
+	height: 80%;
+}

@@ -1,0 +1,278 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+:root {
+	--color: rgba(66,135,245,0.8);
+}
+body {
+	overflow-x: hidden;
+	background-color: var(--color);
+}
+	/*=======Bagian Header=======*/
+#header {
+	background-color: white;
+	display: flex;
+	/*background-color: white;*/
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 5vmax;
+	transition: 0.6s;
+	box-shadow: 0vmax -0.3vmax 1.5vmax #000000;
+}
+section {
+	margin-top: -1em;
+}
+.wrap-Nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	height: 5vmax;
+	margin: auto;
+}
+.logo{
+	text-decoration: none;
+	font-size: 2vmax;
+	transition: 0.6s;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	color: #6495ED;
+}
+.logo span{
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+	font-size: 3vmax;
+	color: #FF7F50;
+}
+.navigation ul {
+}
+.navigation ul li{
+	display: inline-block;
+	position: relative;
+	justify-content: space-around;
+	margin-left: 20px;
+	padding: 20px;
+}
+.navigation ul .nav a::after{
+	content: '';
+	width: 0%;
+	height: 2%;
+	position: absolute;
+	bottom: 10px;
+	left: 20%;
+	background-color: #6495ED;
+	opacity: 0;
+	cursor: default;
+	transition: all 0.5s ease;
+}
+.navigation ul .nav a:visited{
+	color: grey;
+	transition: all 0.5s ease;
+}
+.navigation .simulasi a{
+	font-weight: bold;
+	color: #6495ED;
+}
+.simulasi::after{
+	content: '';
+	width: 80%;
+	height: 2%;
+	position: absolute;
+	bottom: 10px;
+	left: 20%;
+	background-color: #6495ED;
+	opacity: 1;
+	cursor: default;
+	transition: all 0.5s ease;
+}
+.navigation ul .nav a:hover::after,.navigation ul .nav a:hover {
+	opacity: 1;
+	width: 80%;
+}
+.navigation ul .nav a{
+	transition: all 0.5s ease;
+}
+.navigation ul .nav a:hover {
+	color: black;
+}
+.navigation ul li a{
+	text-decoration: none;
+	font-size: 1.2vmax;
+	color: grey;
+	cursor: pointer;
+}
+	/*======Bagian Hamburger Menu ======*/
+.menu {
+	display: none;
+	flex-direction: column;
+	width: 6%;
+	height: 3%;
+	position: absolute;
+	top: 1%;
+	right: 20px;
+	justify-content: space-around;
+	z-index: 3;
+	cursor: pointer;
+}
+.menu span{
+	display: block;
+	width: 100%;
+	height: 12%;
+	border-radius: 4px;
+	background-color: black;
+	transition: .8s;
+}
+.toggle span:nth-child(1){
+	transform: rotate(45deg) translate(32%, 100%);
+}
+.toggle span:nth-child(2){
+	transform: scale(0);
+}
+.toggle span:nth-child(3){
+	transform: rotate(-45deg) translate(32%, -100%);
+}
+
+	/*======Bagian Login======*/
+.container{
+	width: 100%;
+	height: 89vh;
+	position: relative;
+	top: 70px;
+	display: flex;
+	flex-direction: column;
+}
+.wrap{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 85%;
+	margin: auto;
+}
+.imgLogo {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgLogo img{
+	width: 70%;
+}
+.fluid{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login {
+	background-color: rgba(240, 255, 255, 0.5);
+	border-radius: 4%;
+	width: 29.5vmax;
+	height: 29.5vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrap-from {
+	display: flex;
+	width: 90%;
+	height: 80%;
+	flex-direction: column;
+}
+.login h1 {
+	font-size: 2.3vmax;
+	text-align: center;
+	padding: 2%;
+}
+.login ul {
+	margin-top: 5%; 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.login ul p {
+	margin-bottom: 3%;
+	font-size: 1.2vmax;
+}
+.login ul li {
+	font-size: 1.2vmax;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	margin-left: 1.2em;
+}
+#form {
+	margin-top: 8%;
+	height: 9vmax;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.cont-form{
+	height: 2vmax;
+}
+.cont-form label {
+	position: relative;
+	top: -1.5vmax;
+	font-size: 1.2vmax;
+	transition: 0.9s;
+}
+#form input[type='text']{
+	font-size: 1.2vmax;
+	width: 100%;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid black;
+}
+#form input[type='text']:focus {
+	outline: none;
+}
+#form input:focus~label,
+#form input:valid~label{
+	top: -3vmax;
+	font-size: 1vmax;
+}
+#form span {
+	width: 6vmax;
+	font-weight: bold;
+	font-size: 0.9vmax;
+	position: relative;
+	left: 18vmax;
+	top: -3vmax;
+	color: red;
+	opacity: 0;
+}
+#form i:nth-child(4) {
+	width: 5%;
+	text-align: center;
+	position: relative;
+	font-size: 1.1vmax;
+	left: 16.5vmax;
+	top: -1.5vmax;
+	color: red;
+	opacity: 0;
+}
+#form i:nth-child(5) {
+	width: 5%;
+	text-align: center;
+	position: relative;
+	left: 15vmax;
+	top: -1.5vmax;
+	font-size: 1.1vmax;
+	color: green;
+	opacity: 0;
+}
+#form button {
+	width: 9vmax;
+	height: 3vmax;
+	margin-left: 34%;
+	margin-top: 5%;
+	border-radius: 25px;
+	border: none;
+	font-size: 1.1vmax;
+	cursor: pointer;
+}

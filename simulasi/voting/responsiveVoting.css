@@ -1,0 +1,94 @@
+@media screen and (max-width: 890px){
+	.wrapping{
+		align-items: center;
+	}
+	#countdown {
+		font-size: 3vmax;
+		height: 4%;
+		left: 43%;
+		top: 18%;
+		padding-top: 1%;
+	}
+	.paslon1{
+		margin-left: 0;
+	}
+	.paslon2{
+		margin-left: 5%;
+	}
+	.paslon1,.paslon2{
+		width: 100%;
+		height: 50%;
+	}
+	.paslon1 h1,.paslon2 h1{
+		font-size: 3vmax;
+		width: 15%;
+	}
+	.img1 h2,.img2 h2 {
+		font-size: 2.5vmax;
+	}
+	.paslon1 span, .paslon2 span{
+		font-size: 1.9vmax;
+	}
+	.visiMisi1 i,.visiMisi2 i{
+		font-size: 2vmax;
+	}
+	.visiMisi1 h4,.visiMisi2 h4 {
+		font-size: 2.5vmax;
+		margin-top: 5%;
+	}
+	.visiMisi1 p:nth-child(3),.visiMisi1 p:nth-child(4),.visiMisi1 p:nth-child(5){
+		font-size: 1.7vmax;
+	}
+	.visiMisi2 p:nth-child(3),.visiMisi2 p:nth-child(4),.visiMisi2 p:nth-child(5){
+		font-size: 1.7vmax;
+	}
+	.paslon1 button,.paslon2 button {
+		width: 35%;
+		font-size: 2vmax;
+		height: 7%;
+	}
+}
+/*Ukuran Mobile*/
+@media screen and (max-width: 430px){
+	#countdown {
+		font-size: 2.5vmax;
+		left: 40%;
+		top: 25%;
+		padding-top: 3%;
+	}
+	.paslon2{
+		margin-left: 3%;
+	}
+	.paslon1,.paslon2{
+		height: 35%;
+	}
+	.img1 h2,.img2 h2 {
+		font-size: 1.7vmax;
+	}
+	.paslon1 span, .paslon2 span{
+		font-size: 1.2vmax;
+	}
+	.visiMisi1,.visiMisi2 {
+		opacity: 1;
+		height: 95%;
+		margin-top: -10%;
+	}
+	.visiMisi1 i,.visiMisi2 i{
+		font-size: 1.8vmax;
+	}
+	.visiMisi1 h4,.visiMisi2 h4 {
+		font-size: 1.8vmax;
+		margin-top: 2.5%;
+	}
+	.visiMisi1 p:nth-child(3),.visiMisi1 p:nth-child(4),.visiMisi1 p:nth-child(5){
+		font-size: 1.25vmax;
+	}
+	.visiMisi2 p:nth-child(3),.visiMisi2 p:nth-child(4),.visiMisi2 p:nth-child(5){
+		font-size: 1.25vmax;
+	}
+	.paslon1 button,.paslon2 button {
+		width: 35%;
+		font-size: 1.2vmax;
+		height: 9%;
+	}
+}

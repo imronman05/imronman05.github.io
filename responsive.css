@@ -1,0 +1,484 @@
+	/*Ukuran Tablet*/
+@media screen and (max-width: 890px){
+	/*Navigasi*/
+	#header {
+		height: 6.5vmax;
+	}
+	.navigation ul li {
+		margin-left: 0;
+		padding: 10px;
+	}
+	.navigation ul li a {
+		font-size: 100%;
+	}
+	.logo {
+		font-size: 3vmax;
+		margin-top: 1%;
+	}
+	.logo span {
+		font-size: 4vmax;
+	}
+	/*DropDown*/
+	.drop-down {
+		width: 25vmax;
+	}
+	.drop-down li {
+		left: 0%;
+	}
+	.navigation ul li:hover .drop-down{
+		height: 25vmax;
+	}
+	/*Bagian Caption*/
+	.fluid {
+		flex-flow: column-reverse nowrap;
+		justify-content: center;
+	}
+	.tittle-section {
+		width: 100%;
+		height: 30vmax;
+	}
+	.tittle-section h1{
+		font-size: 3.9vmax;
+	}
+	.tittle-section p{
+		width: 100%;
+		font-size: 2.3vmax;
+		margin-top: 2%;
+	}
+	.tittle-section a {
+		font-size: 2.2vmax;
+	}
+	.tittle-section a i{
+		font-size: 2.2vmax;
+	}
+	.image img {
+		width: 100%;
+		height: 100%;
+	}
+	/*Bagian Up Scrool*/
+	.up{
+		width: 7vmax;
+		height: 7vmax;
+		font-size: 5vmax;
+	}
+	/*Bagian Article 1*/
+	article {
+	}
+	#Article {
+		flex-flow: column nowrap;
+	}
+	.article {
+		width: 100%;
+		height: 20%;
+		margin-top: 5%;
+		margin-left: 0;
+	}
+	#Gambar1 {
+		width: 100%;
+		height: 50%;
+		margin-top: 10%;
+	}
+	.article h1,.article2 h1,#Center h1,aside h1,#Kontak h3 {
+		font-size: calc(1.5vmax + 50%);
+	}
+	.article p {
+		font-size: calc(1.36vmax + 1%);
+
+	}
+	/*Bagian Article 2*/
+	#Article2 {
+		flex-flow: column-reverse nowrap;
+		justify-content: center;
+	}
+	.article2{
+		width: 100%;
+		height: 70%;
+		margin-top: 10%;
+	}
+	.article2 ol li {
+		font-size: calc(1.36vmax + 1%);
+	}
+	.article2 ol{
+		margin-top: 2%;
+	}
+	#Gambar2{
+		width: 90%;
+		height: 45%;
+	}
+	/*Bagian Center*/
+	.slider{
+		width: 100%;
+		align-items: center;
+	}
+	.content {
+		width: 100%;
+		height: 100%;
+	}
+	.content img{
+		height: 51%;
+	}
+	.content p{
+		height: 50%;
+		font-size: 80%;
+	}
+	.button {
+		margin-top: 0%;
+	}
+	#lanjut {
+		right: 6.3vmax;
+	}
+	/*Bagian Aside*/
+	aside {
+		justify-content: center;
+	}
+	.creat {
+		height: 50%;
+	}
+	aside h1{
+		margin-top: 0;
+	}
+	.wrp{
+		width: 100%;
+		box-shadow: -2rem 1rem 0rem -1.575rem var(--color), 2rem -1rem 0rem -1.575rem var(--color), 0rem 0rem 0rem -0.4rem white, 0 0 0 0.4rem white;
+	}
+	@keyframes kontak {
+	  0% {
+	    width: 100%;
+	    height: 0;
+	  }
+	}
+	.team {
+		width: 100%;
+	}
+	@keyframes creat {
+	  0%{
+	    transform: scale(0);
+	  }
+	  50% {
+	    transform: scale(0);
+	  }
+	  90% {
+	    transform: scale(0.5,0.5);
+	  }
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+	.team figure h1{
+		font-size: 3vmax;
+	}
+	.border-nama{
+		left: 16vmax;
+	}
+	.team h3{
+		font-size: 1.7vmax;
+	}
+	.team figure{
+		height: 95%;
+	}
+	.paraf{
+		font-size: 1.5vmax;
+	}
+	.icon{
+		height: 30%;
+		width: 98%;
+	}
+	.sosmed p{
+		font-size: 1.1vmax;
+	}
+	.sosmed a{
+		font-size: 2.5vmax;
+	}
+	/*Bagian Kontak*/
+	#Kontak h3{
+		margin-top: 0;
+	}
+	.kontak {
+		justify-content: center;
+	}
+	form {
+		width: 80%;
+		height: 45%;
+	}
+	.contact {
+		width: 95%;
+		height: 12%;
+	}
+	.contact input,.contact textarea{
+		font-size: 2.2vmax;
+		width: 100%;
+		height: 10%;
+	}
+	.contact label{
+		font-size: 2.2vmax;
+	}
+	input:focus~label,
+	input:valid~label{
+		top: -2.2vmax;
+		font-size: 2vmax;
+	}
+	textarea:focus~label,
+	textarea:valid~label{
+		top: -2.2vmax;
+		font-size: 2vmax;
+	}
+	.cekNama,.cekNomor,.cekEmail,.textNumber,.textEmail{
+		font-size: 2vmax;
+	}
+	#form button{
+		width: 15vmax;
+		height: 4.2vmax;
+		font-size: 2vmax;
+		border-radius: 15%;
+	}
+	.alert {
+		width: 74%;
+		font-size: 2vmax;
+	}
+	.alert i {
+		left: 8%;
+		font-size: 2vmax;
+	}
+	#form .load::before{
+		left: 15%;
+	}
+	/*Bagian Footer*/
+	footer p{
+		font-size: 2vmax;
+	}
+}
+/*Ukuran Mobile*/
+@media screen and (max-width: 430px){
+	.logo {
+		font-size: 3.5vmax;
+	}
+	.logo span {
+		font-size: 4.5vmax;
+	}
+	.cont {
+		width: 80%;
+		height: 100%;
+		margin: auto;
+	}
+	.wrap-nav1 {
+		opacity: 0;
+		background-color: rgba(0,0,0,0.5);
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0%;
+		justify-content: center;
+		transition: 0.5s ease-out;
+		align-items: center;
+	}
+	nav ul {
+		background-color: rgb(255,255,255);
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 80%;
+		height: 88.5%;
+		border-radius: 1em;
+	}
+	.navigation ul li a{
+		font-size: 2.5vmax;
+		width: 100%;
+	}
+	.fa-angle-down{
+		position: absolute;
+		right: 5%;
+		transition: 0.5s;
+	}
+	.drop-down{
+		height: 0;
+		width: 100%;
+		position: relative;
+		top: 0;
+	}
+	.drop-down li a {
+		font-size: 3.5vmax;
+
+	}
+	.navigation ul li:hover .drop-down{
+		height: 0;
+	}
+	.navigation ul .nav a::after{
+		display: none;
+	}
+	.drop-down li:hover{
+		background-color: transparent;
+	}
+	.drop-mobile{
+		border-radius: 0;
+		position: relative;
+		width: 100%;
+		height: 30vmax !important;
+		top: 0%;
+		overflow: none;
+		opacity: 1;
+	}
+	.none {
+		opacity: 1 !important;
+		height: 50vmax !important;
+	}
+	.menu {
+		display: flex;
+		z-index: 9999;
+		position: fixed;
+	}
+	.geser {
+		opacity: 1;
+		height: 100%;
+	}
+	/*Bagian Caption*/
+	.tittle-section h1{
+		font-size: 3.4vmax;
+	}
+	.tittle-section p{
+		font-size: 2.3vmax;
+	}
+	.tittle-section a{
+		font-size: 1.8vmax;
+	}
+	.tittle-section a i{
+		font-size: 1.7vmax;
+	}
+	/*Bagian Article 1*/
+	article {
+	}
+	.article {
+		height: 23%;
+	}
+	#Gambar1 {
+		width: 75%;
+		height: 35%;
+	}
+	.article h1,.article2 h1,#Center h1,aside h1,#Kontak h3 {
+		font-size: calc(1.5vmax + 50%);
+	}
+	.article p {
+		font-size: calc(1.41vmax + 1%);
+	}
+	/*Bagian Article 2*/
+	.article2{
+		max-height: 50%;
+	}
+	.article2 ol li {
+		font-size: calc(1.43vmax + 1%);
+	}
+	.article2 ol{
+		margin: 5% 5%;
+	}
+	#Gambar2{
+		width: 75%;
+		height: 33%;
+	}
+	/*Bagian Center*/
+	.wrap-h1 {
+		text-align: center;
+	}
+	.slider{
+		align-items: center;
+	}
+	.content {
+		margin-right: 5%;
+		max-width: 22vmax !important;
+		max-height: 40vmax;
+	}
+	.content img{
+		width: 20vmax;
+		height: 15vmax;
+	}
+	.content p{
+		height: 55%;
+		font-size: calc(1.43vmax + 1%);
+		display: flex;
+		align-items: center;
+	}
+	.content h3 {
+		font-size: 2vmax;
+
+	}
+	.button {
+		margin-top: 0%;
+	}
+	#lanjut {
+		right: 6.3vmax;
+	}
+	/*Bagian Aside*/
+	aside h1{
+		margin-top: 0;
+	}
+	.creat{
+		margin-top: 10%;
+		height: 65%;
+		justify-content: flex-start;
+	}
+	.wrp{
+		width: 90%;
+		box-shadow: -2rem 0.3rem 0rem -1.575rem var(--color), 2rem -0rem 0rem -1.575rem var(--color), 0rem 0rem 0rem -0.4rem white, 0 0 0 0.4rem white;
+	}
+	@keyframes kontak {
+	  0% {
+	    height: 0;
+	  }
+	  100% {
+		height: calc(59.8vmax + 10%);
+	  }
+	}
+	.team {
+		flex-direction: column;
+		margin: auto;
+		width: 100%;
+		height: calc(57.5vmax + 10%);
+		border-radius: 0;
+	}
+	.team img{
+		width: 100%;
+		height: 65%;
+		border-radius: 0;
+	}
+	.sosmed {
+		width: 7vmax;
+	}
+	.sosmed p {
+		margin-top: .1em !important;
+	}
+	
+	/*Bagian Kontak*/
+	form {
+		width: 100%;
+	}
+	.contact{
+		height: 15%;
+	}
+	.contact input {
+		height: 100%;
+		padding-bottom: 0 !important;
+		padding: 0 0 0px 10px;
+	}
+	.contact textarea {
+		height: 100%;
+		padding: 18px;
+	}
+	.alert {
+		width: 100%;
+	}
+	.cekNama,.cekNomor,.cekEmail{
+		top: 50%;
+	}
+	.textNumber,.textEmail {
+		top: -0.6vmax;
+	}
+	input:focus~label,
+	input:valid~label{
+		top: -0.6vmax;
+	}
+	textarea:focus~label,
+	textarea:valid~label{
+		top: -0.6vmax;
+	}
+}

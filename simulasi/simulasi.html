@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simulasi E-voting</title>
+	<link href="../Gambar/login.png" rel="shortcut icon">
+	<link rel="stylesheet" href="simulasi.css">
+	<link rel="stylesheet" href="responsiveSimulasi.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<div id="header">
+	<div class="wrap-Nav">
+		<section>
+			<a href="#" class="logo"><span>e</span>-Voting</a>
+		</section>
+		<nav class="navigation">
+			<ul>
+				<li class="nav"><a href="../index.html"><i class="fas fa-home"></i> Home</a>
+				</li>
+				<li class="simulasi"><a href="#"><i class="fas fa-network-wired"></i> Simulasi</a></li>
+				<li class="nav"><a href="../live/live.html"><i class="fas fa-satellite-dish"></i> Siaran Langsung</a></li>
+				<li class="nav"><a href="../perhitungan/perhitungan.html"><i class="fas fa-balance-scale"></i> Perhitungan Cepat</a></li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+<div class="menu">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+</header>
+<main>
+	<div class="container">
+		<div class="wrap">
+			<div class="imgLogo">
+				<img src="../Gambar/contoh2.png">
+			</div>
+			<div class="fluid">
+				<div class="login">
+					<div class="wrap-from">
+						<h1>Silahkan Login</h1>
+					<ul>
+						<p><b>Note:</b></p>
+						<li>Silahkan masukan 16 digit untuk login</li>
+						<li>Anda memiliki waktu 10 menit untuk memilih</li>
+				</ul>
+				<form id="form">
+					<div class="cont-form">
+						<input type="text" name="number" id="NIK" required>
+						<label for="number"><i class="fas fa-address-card"> NIK</i></label>
+						<span>NIK salah!</span>
+						<i class="fas fa-times"></i>
+						<i class="fas fa-check"></i>
+					</div>
+					<button type="submit">Masuk</button>
+				</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script src="simulasi.js"></script>
+</body>
+</html>
