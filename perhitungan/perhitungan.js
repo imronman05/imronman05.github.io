@@ -19,7 +19,7 @@ let myChart = new Chart(ctx, {
     data: {
         labels: ['LaporLah', 'StandOnIndo', 'MLM','Compos','Sucim','Temi','Pas'],
         datasets: [{
-            label: 'Nurhadi & Aldo',
+            label: 'Muslim & Coki',
             data: data1,
             backgroundColor: ['rgba(234, 40, 40, 0.5)'],
             borderColor: ['rgba(234, 40, 40, 1)'],
